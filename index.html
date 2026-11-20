@@ -215,7 +215,7 @@
 
     /* Logotipo: Plus Jakarta Sans Bold, tracking ajustado y punto fucsia, igual que en la tienda */
     .name {
-      margin-top: 1.25rem;
+      margin-top: 0;
       font-family: var(--font-logo);
       font-size: 2.25rem;
       font-weight: 700;
@@ -329,7 +329,7 @@
     /* Celular: botones más grandes y cómodos para el pulgar */
     @media (max-width: 480px) {
       :root { --mark: 3.75rem; }
-      .name { font-size: 2.5rem; margin-top: 1.375rem; }
+      .name { font-size: 2.5rem; }
       .links { margin-top: 2.5rem; gap: .875rem; }
       .link-card > a {
         min-height: 4rem;
@@ -349,7 +349,7 @@
     @media (max-height: 700px) and (orientation: portrait) {
       .page { padding-top: max(3.75rem, calc(env(safe-area-inset-top) + 3.25rem)); }
       :root { --mark: 3.25rem; }
-      .name { margin-top: 1.125rem; }
+      
       .links { margin-top: 1.75rem; gap: .75rem; }
       .link-card > a { min-height: 3.625rem; }
     }
@@ -367,7 +367,7 @@
       }
       .page > .profile { margin-top: 0; }
       .page > .links { margin: 0; gap: .625rem; }
-      .name { margin-top: .875rem; font-size: 1.875rem; }
+      .name { font-size: 1.875rem; }
       .link-card > a { min-height: 3.25rem; padding: .5rem .875rem; font-size: 1rem; border-radius: .875rem; grid-template-columns: 1.75rem 1fr 1.75rem; }
       .link-card .ico { width: 1.75rem; height: 1.75rem; }
       .site-foot { padding-top: .5rem; padding-bottom: calc(.75rem + env(safe-area-inset-bottom)); }
@@ -515,13 +515,6 @@
   <div class="ld-sheet"></div>
   <div class="ld-center">
     <div class="ld-group">
-      <svg class="ld-mark" viewBox="0 6 100 40" aria-hidden="true" focusable="false">
-        <path class="ld-lips" style="--d:1s" d="M6 24C14 19 22 12 31 11.5C37 11 43 15 50 18C57 15 63 11 69 11.5C78 12 86 19 94 24C80 27.5 64 26 50 28.5C36 26 20 27.5 6 24Z"/>
-        <path class="ld-lips lo" style="--d:1.15s" d="M6 24C20 27.5 36 26 50 28.5C64 26 80 27.5 94 24C86 36 72 42 50 42C28 42 14 36 6 24Z"/>
-        <path class="ld-s" pathLength="1" style="--d:.1s;--t:.9s" d="M6 24C14 19 22 12 31 11.5C37 11 43 15 50 18C57 15 63 11 69 11.5C78 12 86 19 94 24"/>
-        <path class="ld-s" pathLength="1" style="--d:.45s;--t:.9s" d="M94 24C86 36 72 42 50 42C28 42 14 36 6 24"/>
-        <path class="ld-s ld-mouth" pathLength="1" style="--d:.8s;--t:.6s" d="M6 24C20 27.5 36 26 50 28.5C64 26 80 27.5 94 24"/>
-      </svg>
       <div class="ld-word" aria-hidden="true">
         <span class="ld-layer ld-outline"><span class="ld-m"><span class="ld-l" style="--i:0">J</span></span><span class="ld-m"><span class="ld-l" style="--i:1">R</span></span><span class="ld-dot">.</span><span class="ld-m"><span class="ld-l" style="--i:2">S</span></span><span class="ld-m"><span class="ld-l" style="--i:3">H</span></span><span class="ld-m"><span class="ld-l" style="--i:4">O</span></span><span class="ld-m"><span class="ld-l" style="--i:5">O</span></span><span class="ld-m"><span class="ld-l" style="--i:6">P</span></span><span class="ld-m"><span class="ld-l" style="--i:7">P</span></span></span>
         <span class="ld-layer ld-fill"><span class="ld-m"><span class="ld-l" style="--i:0">J</span></span><span class="ld-m"><span class="ld-l" style="--i:1">R</span></span><span class="ld-dot">.</span><span class="ld-m"><span class="ld-l" style="--i:2">S</span></span><span class="ld-m"><span class="ld-l" style="--i:3">H</span></span><span class="ld-m"><span class="ld-l" style="--i:4">O</span></span><span class="ld-m"><span class="ld-l" style="--i:5">O</span></span><span class="ld-m"><span class="ld-l" style="--i:6">P</span></span><span class="ld-m"><span class="ld-l" style="--i:7">P</span></span></span>
@@ -663,18 +656,6 @@
     </button>
 
     <header class="profile">
-      <!-- Labios del logo de JR.SHOOPP (mismo dibujo y colores que la pantalla de carga de la tienda) -->
-      <div class="mark reveal" style="--d:0" aria-hidden="true">
-        <svg viewBox="0 6 100 40" focusable="false">
-          <path fill="#e5177e" d="M6 24C14 19 22 12 31 11.5C37 11 43 15 50 18C57 15 63 11 69 11.5C78 12 86 19 94 24C80 27.5 64 26 50 28.5C36 26 20 27.5 6 24Z"/>
-          <path fill="#ec4a96" d="M6 24C20 27.5 36 26 50 28.5C64 26 80 27.5 94 24C86 36 72 42 50 42C28 42 14 36 6 24Z"/>
-          <g fill="none" stroke="#e5177e" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 24C14 19 22 12 31 11.5C37 11 43 15 50 18C57 15 63 11 69 11.5C78 12 86 19 94 24"/>
-            <path d="M94 24C86 36 72 42 50 42C28 42 14 36 6 24"/>
-          </g>
-          <path fill="none" stroke="#8f0c52" stroke-width=".7" stroke-linecap="round" d="M6 24C20 27.5 36 26 50 28.5C64 26 80 27.5 94 24"/>
-        </svg>
-      </div>
       <h1 class="name reveal" style="--d:120"><span class="name-w">JR<b>.</b>SHOOPP</span></h1>
       <p class="tagline reveal" style="--d:200"><span class="ln">Si no puedes unirte, da click en los</span> <span class="ln">3 puntitos y abrir en el navegador</span></p>
     </header>
