@@ -307,6 +307,21 @@
       color: var(--muted);
     }
 
+    .site-foot .ona {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      margin-top: .5rem;
+      font-size: .375rem;
+      letter-spacing: .1em;
+      color: inherit;
+      text-decoration: none;
+      opacity: .45;
+      transition: opacity .2s;
+    }
+    .site-foot .ona:hover, .site-foot .ona:focus-visible { opacity: .85; }
+    .site-foot .ona img { height: .55rem; width: auto; display: block; }
+
     /* Aviso de copiado */
     .toast {
       position: fixed;
@@ -692,7 +707,9 @@
     </ul>
   </main>
 
-  <footer class="site-foot reveal" style="--d:600">&copy; 2026 JR.SHOOPP</footer>
+  <footer class="site-foot reveal" style="--d:600">&copy; 2026 JR.SHOOPP
+    <br><span class="ona" aria-label="Sitio creado por ONA studio"><img src="media/ona-logo.png" alt="" width="7" height="9" loading="lazy" decoding="async">ONA studio</span>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
